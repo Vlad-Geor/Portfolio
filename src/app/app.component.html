@@ -1,17 +1,12 @@
-
-<div class="">
-  <h1 class="text-red-700 text-6xl flex justify-center">Hi and stuff</h1>
-  <div class="flex justify-center">
-    <div class="flex-center w-96 bg-cyan-100 h-96">Div 1</div>
-    <div class="flex-center w-96 bg-cyan-500 h-96">Div 2</div>
-    <div class="flex-center w-96 bg-cyan-900 h-96">Div 3</div>
-  </div>
-  <div class="mt-9 flex justify-around">
-    <app-button></app-button>
-    <app-button></app-button>
-    <app-button></app-button>
-  </div>
-  <div class="h-96 flex justify-center">
-    <img src="https://media.tenor.com/zPz6pCUuN2cAAAAM/peach-cat-and-goma-cat-wave.gif" alt="Cootie cat">
+<div class="h-screen flex justify-around items-center">
+  <input #inputEl
+  type="text" class="bg-blue-300 text-white rounded-md" />
+  <button class="bg-green-400 
+  p-4 rounded-lg text-white" (click)="buttonClicked(inputEl.value)">
+    Apply Something
+  </button>
+  <div class="h-60 w-52   
+  bg-red-600 flex items-center justify-center">
+    <span class="text-white text-4xl">Text Here</span>
   </div>
 </div>
